@@ -60,7 +60,7 @@ pipeline {
                 label 'apache'
             }
             when {
-                brancj 'development'
+                branch 'development'
             }
             steps {
                 sh "cp /var/www/html/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar /var/www/html/rectangles/green/rectangle_${env.BUILD_NUMBER}.jar"
